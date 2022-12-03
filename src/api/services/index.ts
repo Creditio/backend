@@ -1,4 +1,3 @@
-import PuppetService from "./puppetService";
-import GSTAPIService from "./gstapiService";
+import PolygonIDService from "./polygonIdService";
 
-export { PuppetService, GSTAPIService };
+export { PolygonIDService };
