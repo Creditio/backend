@@ -23,7 +23,6 @@ class PolygonIDService {
 	}
 
 	public static async post(url: string, parameters: any, data: any) {
-		console.log(this.token);
 		return this.instance.post(
 			this.baseURL + url + encodeQueryData(parameters),
 			data,
@@ -47,7 +46,7 @@ PolygonIDService.post(
 	}
 ).then((doc: any) => {
 	PolygonIDService.token = doc.data.token;
-	console.log("Done!", doc.data.token);
+	console.log("Done!");
 });
 
 export default PolygonIDService;
