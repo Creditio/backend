@@ -1,0 +1,10 @@
+{
+    "script": "./dist/index.js",
+    "ignore_watch": [
+        "node_modules"
+    ],
+    "instances": "max",
+    "exec_mode": "cluster",
+    "error_file": "/dev/null",
+    "out_file": "/dev/null"
+}

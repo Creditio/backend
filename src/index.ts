@@ -41,6 +41,10 @@ app.use(
 // Setting up routes
 app.use("/api", APIRoutes);
 
+app.get('/hello', (req, res) => {
+	res.send('hello world!');
+});
+
 // Starting secured server with all loaded certificates
 // const server: any = https.createServer(credentials, app);
 // const server: any = https.createServer(app);
